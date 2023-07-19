@@ -556,6 +556,9 @@ a {
 /* Extra Large Desktop */
 @media screen and (min-width: 679px) and (max-width: 1200px) {
   /* Banner Area */
+  .header-top {
+    padding: 0 10px;
+  }
   .banner-area {
     background-position: bottom center;
   }
@@ -570,4 +573,16 @@ a {
   }
 }
 
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  /* Banner Area */
+  .header-top {
+    padding: 0 10px;
+  }
+  .banner-area {
+    padding: 0 10px;
+  }
+  .online-area {
+    padding: 0 10px;
+  }
+}
 /* Responsive End */

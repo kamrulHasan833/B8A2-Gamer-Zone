@@ -12,7 +12,7 @@
   margin: 0 auto;
 }
 section {
-  margin-bottom: 120px;
+  margin-top: 120px;
 }
 /* Button Stles */
 .button-primary {
@@ -21,8 +21,9 @@ section {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  line-height: normal;
   text-transform: uppercase;
+  border: none;
+  padding: 20px 40px;
 }
 .button-blue {
   background: #4ec5f7;
@@ -57,6 +58,9 @@ a {
 
 /* Header Styles start */
 .header-top {
+  box-shadow: 0px 10px 16px #f1f1f1;
+}
+.header-top .container {
   display: flex;
   justify-content: space-between;
   padding: 37px 0;
@@ -112,4 +116,396 @@ a {
   text-shadow: 1px 1px 1px #f61c0d;
   margin-left: 18px;
 }
+
+/* Banner Area styles */
+.banner-area {
+  background-image: url("../images/Group\ 14.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.banner-area .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.banner-title span {
+  text-align: center;
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-desc {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #534c64;
+}
+.banner-desc i {
+  color: #ff42a5;
+  margin-right: 12px;
+}
+.person i {
+  color: #0b0223;
+}
+.person {
+  margin-bottom: 40px;
+}
+.banner-image {
+  display: flex;
+  align-items: flex-end;
+}
+.banner-image img {
+  max-width: 711px;
+  width: 100%;
+}
+.banner-button button:nth-child(1) {
+  margin-right: 20px;
+}
 /* Header Styles End */
+
+/* Main Body Styles Start */
+/* Online Area styles */
+.online-area .section-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.online-area .desc {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.online-games {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.game-image {
+  position: relative;
+  width: 100%;
+}
+.game-image img {
+  width: 100%;
+  display: block;
+}
+.game-desc {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 24px;
+}
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  visibility: hidden;
+  border: 5px solid #ff42a5;
+}
+.overlay i {
+  font-size: 40px;
+  color: #ffffff;
+}
+.overlay p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff42a5;
+  margin-top: 10px;
+}
+.game-image:hover .overlay {
+  visibility: visible;
+}
+
+/* Play Area Styles */
+.play-area .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.play-info {
+  flex-grow: 1;
+}
+.play-image {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  align-items: flex-end;
+}
+.play-image-wrapper {
+  position: relative;
+  width: 74%;
+  max-width: 635px;
+}
+.play-area .section-title {
+  margin-bottom: 40px;
+}
+
+.play-image img:first-child {
+  width: 100%;
+  max-width: 635px;
+}
+.play-image img:last-child {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-45%, 20%);
+  max-width: 318.5px;
+  width: 50%;
+}
+
+/* Game Area Styles */
+.game-area {
+  background-color: #fff9fc;
+  padding: 120px 0;
+}
+.game-area .container {
+  margin-bottom: 0;
+}
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.game {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px 20px 10px 10px;
+  border-radius: 50px;
+}
+.game:hover {
+  border: 2px solid #ff42a5;
+}
+.game p {
+  color: #0b0223;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* Main Body Styles End */
+
+/* Footer Area Styles Start */
+#footer-area {
+  background: #0b0223;
+}
+#footer-area .container {
+  padding: 120px 0;
+}
+#footer-area .container > div {
+  margin-bottom: 60px;
+}
+#footer-area .container > div:last-child {
+  margin-bottom: 0;
+}
+#footer-area .logo-area {
+  display: flex;
+  justify-content: center;
+}
+#footer-area .logo-text {
+  color: #fff;
+}
+.blog-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.blog-list a {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 15px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.social-list a {
+  font-size: 40px;
+  color: #ffffff;
+}
+.social-list a:nth-child(2) {
+  font-size: 40px;
+}
+.social-list a:nth-child(3) {
+  font-size: 55px;
+}
+.settings {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.settings a {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.copywrite p {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.copywrite br {
+  display: none;
+}
+/* Footer Area Styles End*/
+/* Responsive start */
+
+/* For Large Mobile */
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  /* Header Styles start */
+  .header-top {
+    box-shadow: none;
+  }
+  .header-top .container {
+    flex-direction: column;
+    padding: 100px 0 80px;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .nav-list .nav-item:last-child {
+    margin-top: 20px;
+  }
+
+  /* Banner Area */
+  .banner-area {
+    background-position: center bottom;
+    background-size: 197%;
+  }
+  .banner-area .container {
+    flex-direction: column-reverse;
+  }
+  .banner-info {
+    margin-bottom: 20px;
+    padding: 130px 0;
+  }
+  /* Header Styles End */
+
+  /* Main body Styles Start */
+  /* Online Area Styles */
+  .online-games {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 50px;
+  }
+  .online-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .game-desc {
+    text-align: center;
+  }
+
+  /* Play Area styles */
+  .play-area .container {
+    flex-direction: column;
+    gap: 100px;
+  }
+  /* Main body Styles End */
+
+  /* Footer Area Styles */
+
+  .social-list a {
+    text-align: center;
+  }
+  .copywrite br {
+    display: block;
+  }
+}
+
+/* For Tablet */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  /* Header Style */
+  .header-top {
+    box-shadow: none;
+  }
+  .header-top .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 37px 10px;
+  }
+  .banner-area {
+    background-position: center bottom;
+    background-size: 100%;
+  }
+  .banner-area .container {
+    flex-direction: column-reverse;
+  }
+  .banner-info {
+    padding: 50px 0;
+  }
+
+  /* Online Area Styles */
+  .online-games {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Play Area Styles */
+
+  .play-area .container {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .play-image {
+    flex-basis: 70px;
+    flex-shrink: 1;
+  }
+
+  /* Footer Area Styles */
+  .social-list {
+    gap: 70px;
+  }
+  .social-list a {
+    font-size: 40px;
+    color: #ffffff;
+  }
+  .copywrite br {
+    display: block;
+  }
+}
+
+/* Responsive End */

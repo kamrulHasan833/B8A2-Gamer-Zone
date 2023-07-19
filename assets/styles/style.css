@@ -120,7 +120,7 @@ a {
 /* Banner Area styles */
 .banner-area {
   background-image: url("../images/Group\ 14.png");
-  background-size: 50%;
+
   background-repeat: no-repeat;
 }
 .banner-area .container {
@@ -219,9 +219,9 @@ a {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
+  border-radius: 12px;
   visibility: hidden;
-  border: 5px solid #ff42a5;
+  border: 3px solid #ff42a5;
 }
 .overlay i {
   font-size: 40px;
@@ -258,6 +258,7 @@ a {
   width: 74%;
   max-width: 635px;
 }
+
 .play-area .section-title {
   margin-bottom: 40px;
 }
@@ -273,6 +274,8 @@ a {
   transform: translate(-45%, 20%);
   max-width: 318.5px;
   width: 50%;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
 }
 
 /* Game Area Styles */
@@ -296,10 +299,12 @@ a {
   background-color: #ffffff;
   padding: 10px 20px 10px 10px;
   border-radius: 50px;
+  border: 2px solid transparent;
 }
 .game:hover {
   border: 2px solid #ff42a5;
 }
+
 .game p {
   color: #0b0223;
   font-size: 20px;
@@ -383,6 +388,8 @@ a {
 
 /* For Large Mobile */
 @media screen and (max-width: 425px) {
+  /* common Styles */
+
   .container {
     padding: 0 10px;
   }
@@ -408,7 +415,7 @@ a {
 
   /* Banner Area */
   .banner-area {
-    background-position: center bottom;
+    background-position: -400px bottom;
     background-size: 197%;
   }
   .banner-area .container {
@@ -418,6 +425,16 @@ a {
     margin-bottom: 20px;
     padding: 130px 0;
   }
+  .banner-button button:nth-child(1) {
+    margin-right: 0;
+  }
+  .banner-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
   /* Header Styles End */
 
   /* Main body Styles Start */
@@ -441,13 +458,40 @@ a {
     flex-direction: column;
     gap: 100px;
   }
+
+  /* Game Area Styles */
+  .game-area .container {
+    padding: 0;
+  }
+  .games {
+    gap: 40px 10px;
+  }
+  .game {
+    padding: 5px;
+    gap: 2px;
+  }
+  .game img {
+    width: 25px;
+  }
+  .game p {
+    font-size: 10px;
+  }
+
   /* Main body Styles End */
 
   /* Footer Area Styles */
 
   .social-list a {
     text-align: center;
+    flex-basis: 25%;
   }
+  .settings {
+    gap: 20px;
+  }
+  .settings a {
+    flex-basis: 45%;
+  }
+
   .copywrite br {
     display: block;
   }
@@ -455,6 +499,8 @@ a {
 
 /* For Tablet */
 @media screen and (min-width: 426px) and (max-width: 768px) {
+  /* Common Styles */
+
   .container {
     padding: 0 10px;
   }
@@ -470,7 +516,6 @@ a {
   }
   .banner-area {
     background-position: center bottom;
-    background-size: 100%;
   }
   .banner-area .container {
     flex-direction: column-reverse;
@@ -505,6 +550,23 @@ a {
   }
   .copywrite br {
     display: block;
+  }
+}
+
+/* Extra Large Desktop */
+@media screen and (min-width: 679px) and (max-width: 1200px) {
+  /* Banner Area */
+  .banner-area {
+    background-position: bottom center;
+  }
+  .banner-area .container {
+    flex-direction: column-reverse;
+  }
+  .banner-info {
+    padding-top: 80px;
+  }
+  .online-area {
+    padding: 0 10px;
   }
 }
 

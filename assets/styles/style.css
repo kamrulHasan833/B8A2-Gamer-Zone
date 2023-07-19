@@ -357,10 +357,29 @@ a {
   color: #ffffff;
 }
 .social-list a:nth-child(2) {
-  font-size: 40px;
+  font-size: 45px;
+}
+.social-list a:nth-child(2) i {
+  background-color: #1877f2;
+  border-radius: 51%;
 }
 .social-list a:nth-child(3) {
   font-size: 55px;
+}
+.social-list a:nth-child(3) i {
+  position: relative;
+  z-index: 3;
+}
+.social-list a:nth-child(3) i::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #ff0000;
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  border-radius: 50%;
+  z-index: -1;
 }
 .settings {
   display: flex;
@@ -579,7 +598,7 @@ a {
     padding: 0 10px;
   }
   .banner-area {
-    padding: 0 10px;
+    padding: 0 10px 50px;
   }
   .online-area {
     padding: 0 10px;
